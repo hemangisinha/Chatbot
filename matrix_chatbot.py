@@ -32,11 +32,15 @@ st.title("💻 My Chatbot")
 st.write("Talk to your AI — in 100 words or less 🌧️")
 
 # API key input
-api_key = st.text_input(
-    "🔑 Enter your OpenAI API Key:", 
-    type="password",
-    help="Your API key is safe — it is not stored."
-)
+#api_key = st.text_input(
+ #   "🔑 Enter your OpenAI API Key:", 
+  #  type="password",
+   # help="Your API key is safe — it is not stored."
+#)
+
+#Secret Key
+api_key = st.secrets["OPENAI_API_KEY"]
+
 
 # User input
 prompt = st.text_area("💬 Your Message:", placeholder="Enter your prompt here...")
