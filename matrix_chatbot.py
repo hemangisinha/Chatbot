@@ -24,6 +24,7 @@ textarea, input, .stButton>button {
   border-color: #00FF41;
 }
 </style>
+
 """
 
 st.markdown(matrix_bg, unsafe_allow_html=True)
